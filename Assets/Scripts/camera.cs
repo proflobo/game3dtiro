@@ -9,6 +9,7 @@ public class camera : MonoBehaviour
 	void Start()
 	{
 		offset = transform.position - player.transform.position;
+		
 	}
 
 	void LateUpdate()
