@@ -4,21 +4,15 @@ using UnityEngine;
 
 public class bala : MonoBehaviour
 {
-    List<Collider> colliders = new List<Collider>();
- 
-    void OnCollisionEnter(Collision collision)
-    {        
-        if (collision.gameObject.name == "Enemy")
-        {
-            Destroy(collision.gameObject);
-        }
-        else
-        {
-            Destroy(gameObject, 5);
-        }
-    }   
-    /*void Awake()
+    
+    void Start()
     {
-        Destroy(gameObject, 5);
-    }*/
+        Destroy(this.gameObject, 5);
+    }
+
+    
+    void Update()
+    {
+        
+    }
 }
